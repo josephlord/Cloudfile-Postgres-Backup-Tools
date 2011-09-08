@@ -1,0 +1,27 @@
+To run a backup copy the configTemplate.py file to myConfig.py and configure
+for your database and Cloud Files account then run backupScript.py
+
+Test it first with your configuration before scheduling it and make sure to
+check that the files appear on your CloudFiles account.
+
+If you set CLOUDFILEDESTINATIONADDMONTHANDYEAR the container name used will be:
+YYYY-MM-[CLOUDFILEDESTINATIONCONTAINER].
+
+If there is a database password you must have the .pgpass file (or on Windows 
+the %APPDATA%\postgresql\pgpass.conf) file configured in your home directory
+http://www.postgresql.org/docs/9.0/static/libpq-pgpass.html.  I believe that
+this is a limitation of the pg_dump application that it cannot accept passwords
+on the commandline.  If the script is scheduled you will need to make sure it is
+run as the appropriate user.
+
+Future development that I may add would be to add additional cleanup scripts
+and possibly a restore from the latest backup.  Additional features could also
+include email notification of the result and additional robustness/error
+handling which is currently very limited and simple.  I'll only add features
+when there is a real need for them though if you want to contribute I'd be more
+than happy to accept these or potentially other features.
+
+This software is Licensed under the GPL Version 3 license.
+
+Joseph Lord
+Human Friendly Ltd.
