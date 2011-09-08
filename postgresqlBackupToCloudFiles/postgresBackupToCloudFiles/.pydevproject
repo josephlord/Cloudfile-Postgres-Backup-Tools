@@ -7,4 +7,8 @@
 <pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
 <path>/postgresBackupToCloudFiles/src</path>
 </pydev_pathproperty>
+<pydev_pathproperty name="org.python.pydev.PROJECT_EXTERNAL_SOURCE_PATH">
+<path>/Library/Python/2.7/site-packages/python_cloudfiles-1.7.9.2-py2.7.egg/cloudfiles</path>
+<path>/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7</path>
+</pydev_pathproperty>
 </pydev_project>
